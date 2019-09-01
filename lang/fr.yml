@@ -1,0 +1,63 @@
+Messages:
+  Prefix: '&7[&6BetterRTP&7] '
+  ## Placeholders! %x% %y% et %z% sont les coordonées x, y, et z auxquels le joueur est téléporter #
+  Success:
+    Paid: '&aTu a été téléporter à &7 x=%x% y=%y% z=%z% pour &c$%price%&7 en &f%attempts% &7tentatives!'
+    Bypass: '&aTu a été téléporter à&7 x=%x% y=%y% z=%z% en &f%attempts% &7tentatives!'
+  Failed:
+    Price: '&cTu ne peut pas être téléporter pour manque de fond! &7Tu doit avoir au moins $%price% &7pour te rtp!'
+    NotSafe: '&cImpossible de trouver un endroit sûr en %attempts% tentatives! &7Tu n'à pas été RTP!'
+  Other:
+    Success: '&a%player% a été téléporter à &7 x=%x% y=%y% z=%z% en &f%attempts% &7tentatives!'
+    NotSafe: '&cImpossible de trouver un endroit sûr en %attempts% tentatives! &7Tu n'à pas été RTP!'
+  Reload: '&eConfiguration rechargée avec succès!'
+  NoPermission:
+    Basic: '&cDésoler! &7Tu n'à pas la permissions d'utilisé cette commande!'
+    World: '&cDésoler! &7Tu n'est pas autorisé à te téléporter dans le monde %world% !'
+  ## %world% est le monde dans le lequel le joueur est ou le RTP est désactivé #
+  DisabledWorld: '&cLe monde %world% est désactivé! &7Impossible de RTP!'
+  Cooldown: '&cDésoler! &7Tu ne peut pas te téléporter pour encore &c%time% &7secondes!'
+  Invalid: '&cArgument Invalide. Essaye ''/%command% help'''
+  NotOnline: '&cLe joueur &7%player% &cn'est pas en ligne!'
+  Delay: '&aTéléportation dans &f%time% &asecondes! Ne pas bouger!'
+  Moved: '&cTu a bougé! &7RTP à été annulé!'
+  NotExist: '&cil semblerais que le monde &7%world% &cn'existe pas!'
+  Already: '&cWhoops! &7Il semblerait que tu soit déjà en train de te RTP!'
+
+Titres:
+  Enabled: true
+  Delay:
+    ## Paramètre pour aussi envoyer le message dans le chat, ignore le paramètre Enabled
+    SendChatMessage: true
+    ## Les 2 paramètres supportent %player% placeholders
+    Title: '&6BetterRTP par SRC'
+    Subtitle: '&fTéléportation dans %time% secondes!'
+  Success:
+    ## Paramètre pour aussi envoyer le message dans le chat, ignore le paramètre Enabled
+    SendChatMessage: true
+    ## Les 2 paramètres supportent %player% %x% %y% et %z% placeholders
+    Title: '&6BetterRTP par SRC &7(%attempts%)'
+    Subtitle: '&fTéléportation à x=%x% y=%y% z=%z%'
+
+Help:
+  List:
+    - '&e&m------&r &6&lBetterRTP &8| &7Aide &e&m------'
+    - ' &7- &e/%command% &7- Téléportation aléatoire'
+    - ' &7- &e/%command% help &7- Affiche l'aide'
+  ##Si le joueur à la permission de téléporter un autre joueur, ce message s'affichera dans la liste!
+  Player: ' &7- &e/%command% player <joueur> [monde] &7- Téléporte aléatoirement un autre joueur'
+  World: ' &7- &e/%command% world <monde> &7- Téléporte aléatoirement dans un autre monde!'
+  ##Si le joueur a la permission de "reload" le plugin, ce message s'affichera dans la liste!
+  Reload: ' &7- &e/%command% reload &7- Recharge le plugin'
+
+Usage:
+  Player: '&cUtilisation&7: /%command% player <joueur> [monde]'
+  World: '&cUtilisation&7: /%command% world <monde>'
+
+Sounds:
+  Enabled: true
+  ## Plus de sons à https://www.spigotmc.org/wiki/cc-sounds-list/
+  Delay: 'entity_tnt_primed'
+  ## Son pour lors de la téléportation (attente si un delay est configuré!)
+  Success: 'entity_generic_explode'
+  ## Son pour lors de la téléportation (réussite)
